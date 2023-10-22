@@ -15,7 +15,7 @@ export class HomePage {
   constructor(private httpClient:HttpClient) {
 
     // httpClient es un objeto de una librería que se encarga de hacer operaciones con http
-    this.users = this.httpClient.get('https://randomuser.me/api/?results=47').pipe(map((res : any) => res['results']));
+    this.users = this.httpClient.get('https://');
 
   }
 
