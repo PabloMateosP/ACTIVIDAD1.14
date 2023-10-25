@@ -14,13 +14,22 @@
       <ng-container *ngFor="let user of users | async">
         <!-- En el size se pone el divisor entre doce, es decir, ponemos 2 saldrán 6 columnas -->
         <ion-col size-xl="2" size-lg="3" size-md="4" size-sm="6" size-xs="12">
-          <ion-card>
-            <ion-card-content>
-              <p>{{ user.first_name }}</p>
-              <p>{{ user.gender }} {{ user.last_name }}</p>
-              <p>{{ user.email }}</p>
-            </ion-card-content>
-          </ion-card>
+          <ion-list>
+            <ion-card color="medium">
+              <ion-card-content>
+                <ion-card-header>
+                <ion-card-title>{{ user.first_name }} {{ user.last_name }}</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                {{ user.gender }}
+                <p id="email">{{ user.email }}</p>
+                </ion-card-content>
+
+              </ion-card-content>
+              <ion-button fill="block" (click)="borrarContacto">BORRAR</ion-button>
+            </ion-card>
+          </ion-list>
         </ion-col>
       </ng-container>
     </ion-row>

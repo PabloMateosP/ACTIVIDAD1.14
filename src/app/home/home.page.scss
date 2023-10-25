@@ -25,3 +25,13 @@
 #container a {
   text-decoration: none;
 }
+
+@media (orientation: landscape) {
+  #email {
+    display: none; /* Oculta elemento-1 en orientación paisaje */
+  }
+}
+
+ion-card-title {
+  --color: #e9391a;
+}
