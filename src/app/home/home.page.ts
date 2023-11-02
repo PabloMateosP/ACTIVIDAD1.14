@@ -18,8 +18,13 @@ export class HomePage {
 
   }
 
-  borrarContacto(){
-    this.users = [];
+  //Intento de borrar usuario
+  borrarContacto(user: any) {
+    const index = this.users.indexOf(user);
+    
+    if (index > -1) {
+      this.users.slice(index, 1);
+    }
   }
 
 }
