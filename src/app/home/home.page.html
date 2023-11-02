@@ -18,12 +18,16 @@
             <ion-card color="medium">
               <ion-card-content>
                 <ion-card-header>
-                <ion-card-title>{{ user.first_name }} {{ user.last_name }}</ion-card-title>
+                <ion-avatar><img [src]="user.propetary_avatar"></ion-avatar>
+                <ion-card-title>{{ user.propetary_fullName }}</ion-card-title>
                 </ion-card-header>
 
                 <ion-card-content>
-                {{ user.gender }}
-                <p id="email">{{ user.email }}</p>
+                {{ user.car_make }} {{ user.car_model }}
+                <br>
+                [ {{ user.car_year }} ]
+                <br>
+                {{ user.car_vin }}
                 </ion-card-content>
 
               </ion-card-content>
