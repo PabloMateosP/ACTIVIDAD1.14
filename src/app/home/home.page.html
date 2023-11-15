@@ -18,17 +18,17 @@
             <ion-card color="medium">
               <ion-card-content>
                 <ion-card-header>
-                <ion-avatar><img [src]="user.propetary_avatar"></ion-avatar>
-                <ion-card-title>{{ user.propetary_fullName }}</ion-card-title>
+                  <ion-avatar><img [src]="user.propetary_avatar"></ion-avatar>
+                  <ion-card-title>{{ user.propetary_fullName }}</ion-card-title>
                 </ion-card-header>
-
                 <ion-card-content>
-                {{ user.car_make }} {{ user.car_model }}
-                <br>
-                [ {{ user.car_year }} ]
-                <br>
-                <div id="vinCoche">{{ user.car_vin }}</div>
-                
+                  <ion-avatar><img [src]="user.car_image"></ion-avatar>
+                  {{ user.car_make }} {{ user.car_model }}
+                  <br>
+                  [ {{ user.car_year }} ]
+                  <br>
+                  <div id="vinCoche">{{ user.car_vin }}</div>
+
                 </ion-card-content>
 
               </ion-card-content>
