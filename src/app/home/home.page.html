@@ -18,8 +18,10 @@
             <ion-card color="medium">
               <ion-card-content>
                 <ion-card-header>
-                  <ion-avatar><img [src]="user.propetary_avatar"></ion-avatar>
-                  <ion-card-title>{{ user.propetary_fullName }}</ion-card-title>
+                  <ion-item>
+                    <ion-avatar><img [src]="user.propetary_avatar"></ion-avatar>
+                    <ion-label>{{ user.propetary_fullName }}</ion-label>
+                  </ion-item>
                 </ion-card-header>
                 <ion-card-content>
                   <ion-avatar><img [src]="user.car_image"></ion-avatar>
