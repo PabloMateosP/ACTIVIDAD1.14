@@ -1,0 +1,8 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "agenda",
+	"webDir": "www",
+	"server": {
+		"androidScheme": "https"
+	}
+}
