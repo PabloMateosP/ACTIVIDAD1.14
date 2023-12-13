@@ -10,6 +10,7 @@ import {HttpClient} from '@angular/common/http';
 export class HomePage {
   
   users: any;
+  filtro: string = "";
 
   constructor(private httpClient:HttpClient) {
 

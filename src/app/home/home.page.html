@@ -6,14 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="filtro" placeholder="Introduce el nombre a buscar:"></ion-input>
   <ion-grid>
     <ion-row>
       <!-- Se debe de cambiar los nombres de las variable en el for según lo que hagamos -->
       <!-- Se pone de forma asincrona para que el bucle no se espere a que se descarguen todos los datos -->
       <ng-container *ngFor="let user of users | async">
         <!-- En el size se pone el divisor entre doce, es decir, ponemos 2 saldrán 6 columnas -->
-        <ion-col size-xl="2" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+        <ion-col *ngIf="filtro=='' || user.propetary_fullName.startsWith(filtro)" size-xl="2" size-lg="3" size-md="4" size-sm="6" size-xs="12">
           <ion-list>
             <ion-card color="medium">
               <ion-card-content>
